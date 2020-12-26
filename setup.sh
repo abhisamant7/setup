@@ -13,6 +13,8 @@ wget https://golang.org/dl/go1.15.6.linux-amd64.tar.gz
 sleep 6
 sudo tar -xvf go1.15.6.linux-amd64.tar.gz
 sleep 5
+sudo cp -R ~/setup/go  .
+sleep 2
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 sleep 3
@@ -21,6 +23,8 @@ sudo apt install nodejs -y
 sleep 5
 sudo apt-get install python -y
 sleep 4
+sudo usermod -aG docker $USER
+curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.2.1 1.4.9
 
 
 
